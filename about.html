@@ -16,35 +16,40 @@
             }
             </style>
     </head>
-<body>
-<div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        </div>
-        
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-        
-        <script>
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-        }
-        
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
-<h1> About Us</h1>
-<h2> Mission </h2>
-<p style="text-align:center; font-size: 20px"> Lorem ipsum dolor sit amet, ad his quot bonorum delicatissimi, per ex atomorum antiopam convenire. Sea agam libris deseruisse ex, ne ius oratio primis eirmod, clita gloriatur efficiendi ea per. Qui eu quis soluta, eum adhuc argumentum an. Eum te nisl pertinacia persequeris. Mel in veri delicatissimi. Nullam omittam ullamcorper vis id.</p>
-<img src="images/thinking.jpeg">
-<br>
-<h2> Who we are</h2>
-<p style="text-align: left; font-size: 30px"> <img src="images/shocked.jpeg" align="left" style="padding-right: 10px"> Qui nibh soleat ei, graece interesset reformidans ad mel. Ex sea lucilius salutandi, an duo purto oblique epicurei. Usu cu mazim theophrastus, id viris saepe scaevola his. Ut vel facer recusabo, ne invenire oportere theophrastus eum. Ut scripta feugait intellegam est.</p>
-<br>
-<p style="text-align: right; font-size: 30px"> <img src="images/agree.jpeg" align="right" style="padding-left: 10px">Hinc aliquip sea no. Nonumy vituperata id eos. Tantas fabulas commune pri cu, vel eu regione insolens. Quas utroque torquatos pro eu, mel no enim dicant ocurreret, pro at eros utinam molestie. Mel ad tritani blandit, at per equidem delenit. Sea offendit maiestatis ea, in nam fabulas quaestio.            </p>
-<br>
-<p style="text-align: left; font-size: 30px"> <img src="images/thankful.jpeg" align="left" style="padding-right: 10px"> Quo discere copiosae ne. Porro ludus fuisset sit in, dicat iusto conclusionemque sea an, ei nec falli epicuri quaestio. Eu vis vivendum assentior adversarium. Errem legimus ocurreret has id, ei per propriae atomorum quaerendum. Adhuc evertitur no sea, cum malorum ceteros repudiare ei.</p>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="contact.html">Contact</a>
+		</div>
 
-</body>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-4.3.1.js"></script>
+		<script type="text/javascript" src="menu.js"></script>
+		<h1> About Us</h1>
+		<h2>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light col-lg-2">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active"> </li>
+						<li class="nav-item"> </li>
+						<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="mission.html">Mission</a> <a class="dropdown-item" href="about.html">About Us</a>
+				<div class="dropdown-divider"></div>
+						</li>
+					</ul>
+				<form class="form-inline my-2 my-lg-0"></form>
+				</div>
+		</nav>
+		<h2> Who we are</h2>
+		<p style="text-align: left; font-size: 30px"> <img src="images/shocked.jpeg" align="left" style="padding-right: 10px"> Qui nibh soleat ei, graece interesset reformidans ad mel. Ex sea lucilius salutandi, an duo purto oblique epicurei. Usu cu mazim theophrastus, id viris saepe scaevola his. Ut vel facer recusabo, ne invenire oportere theophrastus eum. Ut scripta feugait intellegam est.</p>
+		<br>
+		<p style="text-align: right; font-size: 30px"> <img src="images/agree.jpeg" align="right" style="padding-left: 10px">Hinc aliquip sea no. Nonumy vituperata id eos. Tantas fabulas commune pri cu, vel eu regione insolens. Quas utroque torquatos pro eu, mel no enim dicant ocurreret, pro at eros utinam molestie. Mel ad tritani blandit, at per equidem delenit. Sea offendit maiestatis ea, in nam fabulas quaestio.            </p>
+		<br>
+		<p style="text-align: left; font-size: 30px"> <img src="images/thankful.jpeg" align="left" style="padding-right: 10px"> Quo discere copiosae ne. Porro ludus fuisset sit in, dicat iusto conclusionemque sea an, ei nec falli epicuri quaestio. Eu vis vivendum assentior adversarium. Errem legimus ocurreret has id, ei per propriae atomorum quaerendum. Adhuc evertitur no sea, cum malorum ceteros repudiare ei.</p>
+	</body>
 </html>

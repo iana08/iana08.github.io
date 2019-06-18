@@ -22,41 +22,33 @@
             }
             </style>
     </head>
-<body>
-<div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        </div>
-        
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-        
-        <script>
-        function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-        }
-        
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
-<h1 style= "text-align:center" > Contact Us!</h1>
+	<body>
+		<div id="mySidenav" class="sidenav"><a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a> <a href="index.html">Home</a> <a href="about.html">About</a></div>
 
-<br>
-<h1 style= "text-align:center" > We are here to help</h1>
-<br>
-<label>First Name</label>
-<input type="text" placeholder="Your first name..">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
-<br>
-<label>Last Name</label>
-<input type="text" placeholder="Your last name..">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-4.3.1.js"></script>
+			<script type="text/javascript" src="menu.js"></script>
+		<h1 style= "text-align:center" > Contact Us!</h1>
 
-<br>
-<label>Message</label>
-<br>
-<textarea style="width: 50%" type="text" placeholder="Your message here.."></textarea>
+		<br>
+		<h1 style= "text-align:center" > We are here to help</h1>
+		<br>
+		<label>First Name</label>
+		<input type="text" placeholder="Your first name..">
 
-<p style ="font-size:13px; text-align:center"> .</p>
-</body>
+		<br>
+		<label>Last Name</label>
+		<input type="text" placeholder="Your last name..">
+
+		<br>
+		<label>Message</label>
+		<br>
+		<textarea style="width: 50%" type="text" placeholder="Your message here.."></textarea>
+		<p style ="font-size:13px; text-align:center"> .</p>
+
+		<button>Submit</button>
+	</body>
 </html>

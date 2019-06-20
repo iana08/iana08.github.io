@@ -12,23 +12,32 @@
 				background-attachment: fixed;	
             }
             </style>
-    </head>
-	<body>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="about.html">About</a>
-			<a href="contact.html">Contact</a>
-		</div>    
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</head>
+<body>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+	
+	<header>
+	<div id="mySidenav" class="nav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<li><a href="#">About</a></li>
+			<ul>
+				<li><a href="about.html" onclick="closeNav()">Who We Are</a></li>
+				<li><a href="mission.html" onclick="closeNav()">Mission </a></li>
+			</ul>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	</header>
 
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap-4.3.1.js"></script>
-		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript" src="menu.js">closeNav()</script>
 
 		<h1 style= "text-align:center" > Welcome!</h1>
 		<p style="font-size:13px; text-align:center"> Lorem ipsum dolor sit amet, duo an nibh justo saperet. Vix amet atqui fabulas et, in pri facilis expetendis. 
 		At utinam consulatu constituto mel, eu elitr dicam pri. Mei no labitur numquam. Aeque nihil omnes id usu, oratio debitis eos et.Laudem impedit no cum, laoreet eligendi persecuti eu eum, et novum iisque dissentias est. Cum dignissim argumentum scriptorem ex, ei latine mediocrem euripidis has. 
 		Veri iusto affert mel et, oratio mucius quidam mel ei. Vim autem verear evertitur ad, omnes consul lobortis vix ea.</p>
-	</body>
+</body>
 </html>

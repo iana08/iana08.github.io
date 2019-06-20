@@ -1,7 +1,8 @@
 body {
     font-family: "Lato", sans-serif;
   }
-  .sidenav {
+
+  .nav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -12,10 +13,40 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    text-align:center;
-  }
-  
-  .sidenav a {
+    text-align:left;
+}
+
+.nav ul{
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.nav li{
+	line-height: 40px;
+	text-align: left;
+}
+
+.nav a{
+	border-bottom: 1px;
+	padding-left: 15px;
+	transition: .3s background-color;
+}
+
+.nav li li{
+	font-size: 0.8em;
+}
+
+.nav .subnavbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	font-family: inherit;
+	margin: 0;
+}
+
+  .nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -25,19 +56,41 @@ body {
   
   }
   
-  .sidenav a:hover{
+  .nav a:hover{
     color: #f1f1f1;
   }
   
-  .sidenav .closebtn {
+  .nav .closebtn {
     position: absolute;
-    top: 0;
+    top: 3px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  @media screen and (max-height: 360px) {
+    .nav {padding-top: 15px;}
+    .nav a {font-size: 18px;}
+	.nav li {
+		width: 130px;
+		border-bottom: none;
+		height: 50px;
+		line-height: 50px;
+		font-size: 1.4em;
+		display: inline-block;
+		margin-right: -4px;
+	  }
+	  .nav a{
+		  border-bottom: none;
+	  }
+	  .nav li ul{
+		  position: absolute;
+		  display: none;
+	  }
+	  .nav li:hover ul{
+		  display: block;
+	  }
+	  .nav li ul li {
+		  display: block;
+	  }
   }

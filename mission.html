@@ -16,17 +16,28 @@
             </style>
     </head>
 	<body>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="index.html">Home</a>
-			<a href="contact.html">Contact</a>
-		</div>    
-		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+	
+	<header>
+	<div id="mySidenav" class="nav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<ul>
+			<ul><li><a href="index.html">Home</a></li></ul>
+			<li><a href="#About">About</a></li>
+			<ul>
+				<li><button class="dropbtn" onclick="closeNav('about.html')">Who We Are</button></li>
+				<li><button class="dropbtn" onclick="closeNav('mission.html')">Mission</button></li>
+			</ul>
+			<ul><li><a href="contact.html">Contact</a></li></ul>
+		</ul>
+	</div>
+	</header>
 
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap-4.3.1.js"></script>
-		<script type="text/javascript" src="menu.js"></script>
+		<script type="text/javascript" src="menu.js">closeNav()</script>
+
 		<h1>Mission</h1>
 		<h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
